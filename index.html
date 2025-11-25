@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>CinePick — Movie Suggester</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="logo">🎬 CinePick</div>
+    <div class="controls">
+      <input id="searchInput" type="text" placeholder="Search movies..." aria-label="Search movies">
+      <button id="searchBtn" type="button">Search</button>
+      <button id="trendingBtn" type="button">Trending</button>
+      <button id="randomBtn" type="button">Surprise Me</button>
+      <button id="watchlistBtn">Watchlist</button>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="hero">
+      <h1>Find your next favourite movie ✨</h1>
+      <p class="sub">Search, filter, and get suggestions to new to old all blockbluster movies</p>
+    </section>
+
+    <section id="movies" class="movies-grid" aria-live="polite">
+      <!-- Movie cards will appear here -->
+    </section>
+
+    <div id="toast" class="toast hidden" role="status" aria-live="polite"></div>
+  </main>
+
+  <footer class="footer">Made with ❤️ • CinePick</footer>
+
+  <!-- Link to the JavaScript file -->
+  <script src="script.js"></script>
+</body>
+</html>
